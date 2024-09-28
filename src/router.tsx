@@ -1,4 +1,3 @@
-import React from 'react';
 import { createBrowserRouter, RouteObject } from 'react-router-dom';
 import {Layout} from './components/Layout';
 import MainPage from './pages/Main-page';
