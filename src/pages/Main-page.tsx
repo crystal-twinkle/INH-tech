@@ -1,6 +1,8 @@
 import {useEffect} from 'react';
 import '../css/blocks/about.scss';
 import '../css/blocks/quote.scss';
+import '../css/blocks/section.scss'
+import AdvantagesSection from '../components/AdvantagesSection/AdvantagesSection';
 
 function MainPage() {
 
@@ -8,39 +10,27 @@ function MainPage() {
   }, []);
 
 
-
   return (
     <div className="main-page">
       <section id="about" className="section about about-home">
         <div className="section__body">
-          <h2 className="section__h section__h_with-pre-content">Кто мы</h2>
+          <h2 className="section__h section__h_with-pre-content">Добро пожаловать в INH TECH — Ваш партнёр в мире
+            цифровых решений</h2>
           <div className="about__block">
-            <b>INH TECH —</b> это студия веб-разработки, мобильной разработки и программирования десктопных решений. Мы внедряем системы управления рекламой и алгоритмы для обработки Big data, создаём сайты и сложные аналитические системы. Работаем с компаниями любого размера и сферы деятельности: от стартапов до крупного бизнеса.
+            <b>INH TECH —</b>
+            эМы — молодая и амбициозная студия, которая стремится сделать ваш бизнес успешнее с помощью современных
+            технологий.
+            Собрав команду специалистов с многолетним опытом, мы предоставляем комплексные IT-услуги для стартапов и
+            компаний любого масштаба.
+            Наш подход базируется на создании продуктов, которые помогают развиваться и достигать новых высот.
           </div>
           <div className="about__body">
-            <div className="about__list">
-              <div className="about__card">
-                <p className="about__card_caption">2015</p>
-                <p className="about__card_text">год основания</p>
-              </div>
-              <div className="about__card">
-                <p className="about__card_caption">100+</p>
-                <p className="about__card_text">специалистов, от продуктовых аналитиков до QA-инженеров</p>
-              </div>
-              <div className="about__card">
-                <p className="about__card_caption">250+</p>
-                <p className="about__card_text">проектов, от сайтов до высоконагруженных систем</p>
-              </div>
-              <div className="about__card">
-                <p className="about__card_caption">15+</p>
-                <p className="about__card_text">
-                  стран, в которых <br /> мы ведем проекты
-                </p>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </section>
+
 
       <section id="quote" className="section quote">
         <div className="section__body">
@@ -68,9 +58,12 @@ function MainPage() {
             </div>
             <p className="quote__text">
               Создание сайта для предпринимателя решает сразу несколько ключевых потребностей.
-              Во-первых, это способ заявить о своем бизнесе в цифровом пространстве, что крайне важно в условиях возрастающей онлайн-конкуренции.
+              Во-первых, это способ заявить о своем бизнесе в цифровом пространстве, что крайне важно в условиях
+              возрастающей онлайн-конкуренции.
               Сайт позволяет привлечь клиентов, предоставив информацию о товарах и услугах в удобном для них формате.
-              Это помогает повысить доверие к бренду, особенно если сайт выполнен профессионально, с хорошим дизайном и легкой навигацией. Кроме того, предприниматели получают возможность автоматизировать многие процессы, такие как приём заказов, обработка запросов и консультирование клиентов.
+              Это помогает повысить доверие к бренду, особенно если сайт выполнен профессионально, с хорошим дизайном и
+              легкой навигацией. Кроме того, предприниматели получают возможность автоматизировать многие процессы,
+              такие как приём заказов, обработка запросов и консультирование клиентов.
 
               За созданием сайтов обращайтесь к нам!
             </p>
@@ -78,6 +71,10 @@ function MainPage() {
           </div>
         </div>
       </section>
+
+      <AdvantagesSection/>
+
+
     </div>
   );
 }

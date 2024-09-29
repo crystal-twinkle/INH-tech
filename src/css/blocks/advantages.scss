@@ -1,0 +1,135 @@
+@import '../variables';
+
+$transition-time: 0.3s;
+$primary-color: #4caf50;
+$primary-hover-color: #193119;
+$secondary-text-color: #555;
+
+.section {
+  & .advantages {
+    background-color: #8d8a8a;
+  }
+}
+
+.advantages {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+
+    &:hover {
+      .advantages__card {
+        background: #0ce2e8;
+        transition: background $animation__duration_slow ease;;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow $transition-time ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 20px #dbdbdb;
+    height: 100%;
+
+
+    & .advantages__description {
+      margin-bottom: 20px;
+    }
+
+    & .advantages__icon {
+      width: 50px;
+      height: 50px;
+      fill: $primary-color; // Цвет иконки
+      margin-bottom: 15px;
+    }
+
+    & .advantages__title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    & .advantages__text {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    & .advantages__more {
+      font-size: 1rem;
+      font-weight: 600;
+      display: flex;
+      color: $secondary-text-color;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: color $transition-time ease;
+
+      &:hover {
+        color: $primary-hover-color;
+      }
+
+      &-icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        transition: transform $transition-time ease;
+
+        use {
+          pointer-events: none;
+        }
+
+        &:hover {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}
+
+// Адаптивная версия для мобильных устройств
+@media (max-width: $mq__tablet) {
+  .advantages__list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section__heading {
+    font-size: 2rem;
+  }
+
+  .advantages__card {
+    padding: 30px;
+  }
+
+  .advantages__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .advantages__title {
+    font-size: 1.25rem;
+  }
+
+  .advantages__text {
+    font-size: 0.9rem;
+  }
+
+  .advantages__more {
+    font-size: 0.9rem;
+  }
+}
