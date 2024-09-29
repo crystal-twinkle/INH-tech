@@ -14,8 +14,11 @@ function MainPage() {
     <div className="main-page">
       <section id="about" className="section about about-home">
         <div className="section__body">
-          <h2 className="section__h section__h_with-pre-content">Добро пожаловать в INH TECH — Ваш партнёр в мире
-            цифровых решений</h2>
+          <h2 className="section__heading">
+            Добро пожаловать в INH TECH — <br />
+            <span className="section__heading_with-after-content">Ваш партнёр в мире цифровых решений</span>
+          </h2>
+
           <div className="about__block">
             <b>INH TECH —</b>
             эМы — молодая и амбициозная студия, которая стремится сделать ваш бизнес успешнее с помощью современных

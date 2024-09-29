@@ -5,7 +5,7 @@ const AdvantagesSection = () => {
     <section className="section advantages">
       <div className="section__body">
         <div className="section__content">
-          <h2 className="section__heading section__heading--with-pre-content">
+          <h2 className="section__heading section__heading_with-pre-content">
             Почему выбирают INH TECH
           </h2>
           <div className="advantages__list">

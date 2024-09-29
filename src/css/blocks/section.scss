@@ -97,8 +97,9 @@
         }
     }
 
-    &__h {
+    &__heading {
         margin-top: 0;
+        text-align: center;
 
         @media (max-width: $mq__tablet) {
             margin-bottom: 36px;
@@ -109,6 +110,7 @@
         }
 
         &_with-pre-content {
+            text-align: center;
             margin-bottom: 48px;
 
             @media (max-width: $mq__tablet) {
@@ -118,6 +120,12 @@
             @media (max-width: $mq__mobile) {
                 margin-bottom: 24px;
             }
+        }
+
+        &_with-after-content  {
+            display: block;
+            margin-top: 10px;
+            font-weight: 800;
         }
 
         &_offset-down {
