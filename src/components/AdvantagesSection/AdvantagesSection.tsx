@@ -1,5 +1,11 @@
 import '../../css/blocks/advantages.scss'
 
+interface IAdvantageItem {
+  title: string,
+  description: string,
+  moreText: string
+}
+
 const AdvantagesSection = () => {
   return (
     <section className="section advantages">
@@ -36,7 +42,7 @@ const AdvantagesSection = () => {
   );
 };
 
-const AdvantageItem = ({title, description, moreText}) => {
+const AdvantageItem = ({title, description, moreText}: IAdvantageItem) => {
   return (
     <div className="advantages__item">
       <div className="advantages__card" data-advantage-id="#advantage-modal-1">
